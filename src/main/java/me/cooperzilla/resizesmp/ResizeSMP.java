@@ -1,7 +1,6 @@
 package me.cooperzilla.resizesmp;
 
 import lombok.Getter;
-import lombok.Setter;
 import me.cooperzilla.resizesmp.Commands.Debug;
 import me.cooperzilla.resizesmp.Commands.Revive;
 import me.cooperzilla.resizesmp.Listeners.DeathListener;
