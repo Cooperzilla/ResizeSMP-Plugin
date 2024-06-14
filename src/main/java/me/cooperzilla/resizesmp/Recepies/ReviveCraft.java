@@ -11,8 +11,8 @@ import org.bukkit.persistence.PersistentDataType;
 
 import java.util.Collections;
 
-public class Revive {
-    public void register() {
+public class ReviveCraft {
+    public static void register() {
         ItemStack totem = new ItemStack(Material.TOTEM_OF_UNDYING);
         ItemMeta meta = totem.getItemMeta();
 
@@ -21,7 +21,7 @@ public class Revive {
 
         var container = meta.getPersistentDataContainer();
         container.set(
-                NamespacedKey.fromString("%s:revive".formatted(ResizeSMP.getPl().getName())),
+                new NamespacedKey(ResizeSMP.getPl().getName(),"revive"),
                 PersistentDataType.STRING,
                 "Some Value"
         );

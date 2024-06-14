@@ -1,6 +1,7 @@
 package me.cooperzilla.resizesmp.Commands;
 
 import me.cooperzilla.resizesmp.ResizeSMP;
+import net.kyori.adventure.text.Component;
 import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -35,7 +36,7 @@ public class Revive implements CommandExecutor {
 
         var container = meta.getPersistentDataContainer();
         container.set(
-                NamespacedKey.fromString("%s:revive".formatted(ResizeSMP.getPl().getName())),
+                new NamespacedKey(ResizeSMP.getPl().getName(),"revive"),
                 PersistentDataType.STRING,
                 "Some Value"
         );
@@ -49,6 +50,7 @@ public class Revive implements CommandExecutor {
         }
 
         var ban = Bukkit.getServer().getBanList(BanList.Type.PROFILE).getBanEntry(args[0]);
+
         if (ban.getReason() == "Death Banned") {
             Bukkit.getServer().getBanList(BanList.Type.PROFILE).pardon(args[0]);
         }

@@ -6,8 +6,8 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 
-public class Webs {
-    public void register() {
+public class WebsCraft {
+    public static void register() {
         ShapedRecipe webs = new ShapedRecipe(new NamespacedKey("resize", "webs"), new ItemStack(Material.COBWEB));
         webs.shape(" S ", "SSS"," S ");
         webs.setIngredient('S', Material.STRING);

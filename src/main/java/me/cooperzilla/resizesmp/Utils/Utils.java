@@ -38,13 +38,24 @@ public class Utils {
 
     public static void updateNbt(Player p) {
         AttributeInstance attr = p.getAttribute(Attribute.GENERIC_SCALE);
-
         attr.getModifiers().forEach(attr::removeModifier);
+
+        double size = 0;
+
+        switch ((int) (getLivesDouble(p) * -1)) {
+            case -3 -> size = -1;
+            case -2 -> size = -0.5;
+            case -1 -> size = -0.3;
+            case 0 -> size = 0;
+            case 1 -> size = 0.3;
+            case 2 -> size = 0.5;
+            case 3 -> size = 1;
+        }
 
         attr.addModifier(new AttributeModifier(
                 UUID.fromString("9ea69eae-23ab-4198-b54d-5dd8f419ae5b"),
                 "size",
-                getLivesDouble(p) * -0.25,
+                size,
                 AttributeModifier.Operation.ADD_NUMBER
         ));
     }

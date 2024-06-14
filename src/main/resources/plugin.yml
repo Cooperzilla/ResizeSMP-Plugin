@@ -1,5 +1,5 @@
 name: resizesmp
-version: '${project.version}'
+version: '0.0.6-DESTRUCTIVE'
 main: me.cooperzilla.resizesmp.ResizeSMP
 api-version: '1.20'
 commands:
