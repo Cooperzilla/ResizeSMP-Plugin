@@ -1,0 +1,16 @@
+name: resizesmp
+version: '0.0.4-DESTRUCTIVE'
+main: me.cooperzilla.resizesmp.ResizeSMP
+api-version: '1.20'
+commands:
+  debug:
+    description: debug
+    usage: /debug <big/small>
+    permission: resizesmp.debug
+  revive:
+    description: debug
+    usage: /revive <name>
+    permission: resizesmp.revive
+permissions:
+  resizesmp.revive:
+    default: true
