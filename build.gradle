@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'me.cooperzilla'
-version = '0.0.16-DESTRUCTIVE'
+version = '0.0.17-DESTRUCTIVE'
 
 repositories {
     mavenCentral()
