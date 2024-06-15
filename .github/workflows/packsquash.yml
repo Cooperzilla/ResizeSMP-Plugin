@@ -21,6 +21,6 @@ jobs:
       - name: Upload optimized pack
         uses: actions/upload-artifact@v4
         with:
-          compression: 0
+          compression-level: 0
           name: pack
           path: /tmp/pack.zip
