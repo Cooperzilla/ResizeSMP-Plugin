@@ -19,9 +19,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Run compile java
-        run: ./gradlew compileJava
-      - name: Run build
-        run: ./gradlew jar
+        run: ./gradlew build
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
