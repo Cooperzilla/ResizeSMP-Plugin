@@ -2,7 +2,7 @@ name: Build Gradle project
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build-gradle-project:
     name: build plugin
