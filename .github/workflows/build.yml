@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   build-gradle-project:
+    name: build plugin
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project sources
