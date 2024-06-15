@@ -19,6 +19,7 @@ public class AddSize implements Listener {
         ItemMeta meta = item.getItemMeta();
 
         meta.setDisplayName("Congealed Size");
+        meta.setCustomModelData(1);
 
         var container = meta.getPersistentDataContainer();
         container.set(

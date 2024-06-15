@@ -1,12 +1,9 @@
 package me.cooperzilla.resizesmp;
 
 import lombok.Getter;
-import me.cooperzilla.resizesmp.Commands.Debug;
-import me.cooperzilla.resizesmp.Commands.Revive;
-import me.cooperzilla.resizesmp.Listeners.DeathListener;
-import me.cooperzilla.resizesmp.Listeners.LoginListener;
-import me.cooperzilla.resizesmp.Recepies.ReviveCraft;
-import me.cooperzilla.resizesmp.Recepies.WebsCraft;
+import me.cooperzilla.resizesmp.Commands.*;
+import me.cooperzilla.resizesmp.Listeners.*;
+import me.cooperzilla.resizesmp.Recepies.*;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -21,6 +18,7 @@ public final class ResizeSMP extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new LoginListener(), this);
         this.getCommand("debug").setExecutor(new Debug());
         this.getCommand("revive").setExecutor(new Revive());
+        this.getCommand("withdraw").setExecutor(new Withdraw());
         WebsCraft.register();
         ReviveCraft.register();
     }

@@ -8,11 +8,11 @@ commands:
     usage: /debug <big/small> | /debug give <revive/size> <optional amount>
     permission: resizesmp.debug
   revive:
-    description: debug
+    description: revive
     usage: /revive <name>
     permission: resizesmp.revive
   withdraw:
-    description: debug
+    description: withdraw
     usage: /withdraw <optional amount>
     permission: resizesmp.withdraw
 permissions:

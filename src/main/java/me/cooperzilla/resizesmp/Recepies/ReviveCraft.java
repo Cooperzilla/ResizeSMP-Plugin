@@ -18,6 +18,7 @@ public class ReviveCraft {
 
         meta.setDisplayName("Revival Totem");
         meta.setLore(Collections.singletonList("Run /revive <name>"));
+        meta.setCustomModelData(1);
 
         var container = meta.getPersistentDataContainer();
         container.set(

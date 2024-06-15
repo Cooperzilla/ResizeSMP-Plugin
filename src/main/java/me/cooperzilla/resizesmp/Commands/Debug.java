@@ -56,6 +56,7 @@ public class Debug implements CommandExecutor {
 
                             meta.setDisplayName("Revival Totem");
                             meta.setLore(Collections.singletonList("Run /revive <name>"));
+                            meta.setCustomModelData(1);
 
                             var container = meta.getPersistentDataContainer();
                             container.set(
@@ -75,6 +76,7 @@ public class Debug implements CommandExecutor {
                             ItemMeta meta = item.getItemMeta();
 
                             meta.setDisplayName("Congealed Size");
+                            meta.setCustomModelData(1);
 
                             var container = meta.getPersistentDataContainer();
                             container.set(

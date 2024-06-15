@@ -10,6 +10,6 @@
         <module name="ResizeSMP.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.6" />
+    <bytecodeTargetLevel target="21" />
   </component>
 </project>

@@ -29,6 +29,7 @@ public class Withdraw implements CommandExecutor {
 
             ItemStack item = new ItemStack(Material.RED_DYE);
             ItemMeta meta = item.getItemMeta();
+            meta.setCustomModelData(1);
 
             meta.setDisplayName("Congealed Size");
 
@@ -55,6 +56,7 @@ public class Withdraw implements CommandExecutor {
                 ItemMeta meta = item.getItemMeta();
 
                 meta.setDisplayName("Congealed Size");
+                meta.setCustomModelData(1);
 
                 var container = meta.getPersistentDataContainer();
                 container.set(
