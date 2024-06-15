@@ -18,6 +18,7 @@ jobs:
           packsquash_version: latest
           options: |
             pack_directory = 'pack'
+            output_file_path = '/tmp/pack.zip'
       - name: Upload optimized pack
         uses: actions/upload-artifact@v4
         with:
